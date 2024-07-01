@@ -1,0 +1,64 @@
+• Au début du jeu, le programme demande le nombre de joueurs qui vont
+participer au jeu. Le nombre possible de joueurs est compris entre 2 et 6. Le
+programme demandera les noms de chaque joueur pour pouvoir les
+afficher.
+
+• Le jeu doit également fixer la taille du plateau de jeu (nombre de lignes et
+nombre de colonnes).
+
+• Le nombre de pingouins est fonction du nombre de joueurs : pour 2
+joueurs, il y a 4 pingouins par joueur sur le plateau. Pour 3 joueurs il y a 3
+pingouins par joueur, et pour 4 joueurs il y a 2 pingouins par joueur.
+
+• L’affichage doit comporter la zone de jeu rectangulaire ou carrée avec les
+cases de forme hexagonale. Le nombre de colonnes et de lignes doit être au
+moins de 9 colonnes et 9 lignes. Votre modèle de données (la zone
+mémoire qui contient votre grille de jeu) peut, lui, être une grille
+orthogonale (une matrice) : il vous faudra alors effectuer une petite
+conversion entre les coordonnées orthogonales et hexagonales, ainsi que
+les mouvements possibles. Voici un exemple possible d’affichage de cases
+hexagonales dans un terminal (9 colonnes sur 3 lignes) :
+
+• L’affichage doit toujours afficher les noms et scores de chaque joueur en
+plus de la zone de jeu.
+
+• Chaque case hexagonale doit comporter entre 1 et 3 poissons, valeur fixée
+aléatoirement par le programme au démarrage. Si un pingouin se trouve
+sur une case, il faut également pouvoir l’identifier (savoir à quel joueur
+appartient ce pingouin). Le programme doit permettre de vérifier qu’il y a
+suffisamment de cases avec 1 seul poisson car les pingouins démarrent
+toujours sur une case avec 1 poisson.
+
+• Le nombre de poissons sur chaque case doit être visible.
+
+• A chaque tour, le joueur actif DOIT déplacer un de ses pingouins d’au moins
+1 case.
+
+• A chaque tour, le joueur actif doit choisir quel pingouin déplacer, puis doit
+indiquer la direction de déplacement (parmi 6 puisque nous sommes sur
+une grille hexagonale) puis il doit indiquer la distance de déplacement (le
+nombre de cases). Ensuite le programme doit vérifier si ce déplacement est
+valide (le pingouin ne peut pas se déplacer sur une case déjà occupée par
+un autre pingouin, il ne peut pas se déplacer en dehors du plateau de jeu,
+et ne peut pas se déplacer sur une case vide. Il ne peut pas non plus
+traverser ces cases pour s’arrêter derrière).
+
+• Si le déplacement n’est pas valide, le programme redemande au même
+joueur d’indiquer à nouveau son déplacement.
+
+• Le programme vérifie toujours qu’il y a au moins 1 déplacement possible.
+
+• Si un joueur n’a aucun déplacement possible, son tour est passé
+automatiquement par le programme.
+
+• Quand un déplacement est valide, le pingouin impacté est téléporté sur la
+case de destination et la case de départ est supprimée (il n’est plus possible
+de se déplacer dessus, ni de la traverser). Le nombre de poissons de la case
+supprimée est ajouté au score du joueur courant.
+
+• Les cases supprimées doivent être facilement identifiable à l’écran.
+
+• Quand il n’y a plus aucun joueur qui peut effectuer de déplacement, c’est le
+critère pour marquer la fin du jeu. Un message avec le nom du gagnant est
+affiché, ainsi que les scores. Le programme doit permettre de recommencer
+une partie ou quitter, en fonction du choix de l’utilisateur.

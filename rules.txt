@@ -1,0 +1,29 @@
+RULES OF THE GAME :
+
+1. Objective of the Game
+    - Penguins on an iceberg compete to catch the most fish.
+
+2. Course of the Game
+    - The game takes place on a hexagonal grid of squares.
+    - Each box contains between 1 and 3 fish and can contain a penguin.
+    - Players move their penguins to collect fish.
+
+3. Moving the Penguins
+    - A penguin moves in a straight line as many squares as desired.
+    - He cannot cross a square occupied by another penguin or a square.
+    - A space can only be occupied by one penguin at a time.
+    - After each move, the starting square is broken due to global warming.
+
+4. End of Game
+    - The game ends when all players are blocked.
+    - The player with the most fish wins.
+
+5. Specific Rules
+    - Number of players: 2 to 6.
+    - Number of penguins: 4 (2 players), 3 (3 players), 2 (4 players).
+    - The hexagonal boxes display the number of fish, a penguin and a cross meaning that the box is unusable.
+
+6. Variants
+    - Hexagonal Grids: HEXA_A.
+    - Starting positions: START_AUTO (program).
+    - Fish counting: FISH_ROTTEN.
